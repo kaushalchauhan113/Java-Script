@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-6</title>
+</head>
+<body>
+    <hr>
+    <script>
+        //arithmetic_operation
+        let n1 = 20,n2 = 30;
+
+        var sum=n1+n2,mul=n1*n2,sub=n1-n2,div=n1/n2,mod=n1%n2;
+        document.write("<br/>sum:",sum+"<br/>Mul:",mul+"<br/>sub",sub+"<br/>div",div+"<br/>");
+        </script>
+    <hr>
+        <script>
+            //string_operations
+            let s1 = "Kaushal";
+            let s2 = "Chauhan";
+            let s3 = s1 +" "+s2;
+            document.write(s3);
+        </script>
+    <hr>
+        <script>
+            //conditional_operations
+            var m1 =10,m2="10";
+
+            if(m1==m2){
+                document.write("<br/> same.");
+            }
+            else
+            {
+                document.write("<br/>Not Same.");
+            }
+
+            if(m1===m2)
+            {
+                document.write("<br/>same.");
+            }
+            else{
+                document.write("<br/>Not Same.");
+            }
+
+            var n11=10,n22=10;
+
+            if(n11==n22)
+            {
+                document.write("<br/>same.");
+            }
+            else
+            {
+                document.write("<br/>Not Same.");
+            }
+
+            if(n11===n22)
+            {
+                document.write("<br/>same.");
+            }
+            else
+            {
+                document.write("<br/>Not Same.");
+            }
+        </script>
+        <hr>
+        <script>
+            var a=["silver","oak"];
+            document.write(a instanceof Array);
+
+            document.write("<br/>");
+
+            class Rectangle{
+                constructor(hight,width) {
+                    this.hight = hight;
+                    this.width = width;
+                }
+            }
+            var R=new Rectangle(10,20);
+            document.write(R instanceof Rectangle);
+             
+            document.write("<br/>");
+
+            document.write(R.hight+R.width);
+        </script>
+        <hr>
+</body>
+</html>

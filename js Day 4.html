@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-4</title>
+</head>
+<body>
+    <hr>
+    <script>
+        //converting strings to numbers
+        document.write("<br/>"+Number("3.14787868")); //returns 3.14
+        document.write("<br/>"+Number(" "));          //returns 0
+        document.write("<br/>"+Number(""));           //returns 0 
+        document.write("<br/>"+Number("99 88"));      //returns NaN (NaN means Not A Number)
+    </script>
+    <hr>
+    <script>
+        //converting numbers to strings
+        let num = 111;
+        let s=String(100+23);
+        document.write("<br/>"+String(num));
+        document.write("<br/>"+String(123));
+        document.write("<br/>"+String(s+100+23));
+        document.write("<br/>"+String("100" + "23")+String("100" + "23"));
+    </script>
+    <hr>
+    <script>
+        //The Number method tostring() Does The Same It convert Number To strings.
+        document.write("<br/>"+num.toString());
+        document.write("<br/>"+String(num+num.toString()));
+    </script>
+    <hr>
+    <script>
+        //The toExponential() method returns a string.
+        let numexp = 3.14;
+        document.write("<br/>"+numexp.toExponential(1));
+        document.write("<br/>"+numexp.toExponential(2));
+        document.write("<br/>"+numexp.toExponential(4));
+        document.write("<br/>"+numexp.toExponential(6));
+        document.write("<br/>"+numexp.toExponential(8));
+    </script>
+    <hr>
+    <script>
+        //The toFixed() retuns a string.
+        let numfixed = 3.14;
+        document.write("<br/>"+numfixed.toFixed());
+        document.write("<br/>"+numfixed.toFixed(2));
+        document.write("<br/>"+numfixed.toFixed(4));
+        document.write("<br/>"+numfixed.toFixed(6));
+    </script>
+    <hr>
+    <script>
+        //The toPrecision() method returns a string.
+        let numprec = 3.14;
+        document.write("<br/>"+numprec.toPrecision());
+        document.write("<br/>"+numprec.toPrecision(2));
+        document.write("<br/>"+numprec.toPrecision(4));
+        document.write("<br/>"+numprec.toPrecision(6));
+    </script>
+    <hr>
+    <script>
+        //number,parseInt,parseFloat.
+        document.write("<br/>"+Number(true));
+        document.write("<br/>"+Number(false));
+        document.write("<br/>"+Number("11"));
+        document.write("<br/>"+Number(" 11"));
+        document.write("<br/>"+Number("11 "));
+        document.write("<br/>"+Number(" 11 "));
+        document.write("<br/>"+Number("11.33"));
+        document.write("<br/>AAAA:"+Number("11,33"));
+        document.write("<br/>"+Number("11 33"));
+        document.write("<br/>"+Number("ABC"));
+        document.write("<br/>"+Number(new Date("1970-01-01")));
+
+        document.write("<br/>MIN_VALUE, MAX_VALUE, POSITIVE_INFINITY, NEGATIVE_INFINITY");
+        //Max number possible in JS.
+        document.write("<br/>"+Number.MAX_VALUE);
+
+        //Min number possible in JS.
+        document.write("<br/>"+Number.MIN_VALUE);
+
+        //1 /0;
+        document.write("<br/>"+Number.POSITIVE_INFINITY);
+
+        //-1 /0;
+        document.write("<br/>"+Number.NEGATIVE_INFINITY);
+    </script>
+    <hr>
+    </body>    
+</html>

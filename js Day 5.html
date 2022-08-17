@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-5</title>
+</head>
+<body>
+    <hr>
+    <script>
+        //parseint()
+        document.write("<br/>"+parseInt("-10"));
+       document.write("<br/>"+parseInt("-10.33"));
+        document.write("<br/>"+parseInt("10"));
+        document.write("<br/>"+parseInt("10.33"));
+        document.write("<br/>"+parseInt("10 20 30"));
+        document.write("<br/>"+parseInt("years is:10"));
+    </script>
+    <hr>
+    <script>
+        //parseFloat()
+        document.write("<br/>"+parseFloat("-10"));
+       document.write("<br/>"+parseFloat("-10.33"));
+        document.write("<br/>"+parseFloat("10"));
+        document.write("<br/>"+parseFloat("10.33"));
+        document.write("<br/>"+parseFloat("10 20 30"));
+        document.write("<br/>"+parseFloat("10 years"));
+    </script>
+    <hr>
+    <script>
+        //Date-year,month,day,hours,minutes,second.
+        document.write("<br/>"+new Date());
+        document.write("<br/>"+new Date("1970-01-01"));
+        document.write("<br/>"+new Date("october 13,2014 11:13:00"));
+         
+        var d = new Date();
+        document.write("<br/>"+d.toString());
+        document.write("<br/>"+d.toUTCString());
+        document.write("<br/>"+d.toDateString());
+        document.write("<br/>"+d.toISOString());
+
+        document.write("<br/>"+d.getTime());
+        document.write("<br/>"+d.getDate());
+        document.write("<br/>"+d.getDay());
+        document.write("<br/>"+d.getFullYear());
+        document.write("<br/>"+d.getHours());
+        document.write("<br/>"+d.getMonth());
+    </script>
+    <hr>
+    </body>    
+</html>

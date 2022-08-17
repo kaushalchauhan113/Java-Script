@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <script>
+        let i=0;
+        while (i < 10) {
+            document.write("<br/>"+i);
+            i++;
+        }
+    </script>
+    <hr>
+    <hr>
+    <script>
+        //For_in Loops
+        const Human ={FirstName:"Ram",LastName:"Yadav",Age:25};
+        for (let H in Human) {
+            document.write("<br/>"+H);
+        }
+        document.write("<hr/>");
+        for(let H in Human) {
+            document.write("<br/>"+Human[H]);
+        }
+    </script>
+    <hr>
+    <hr>
+    <script>
+        //For_of Loops
+        const Cities = ["New York","Tokiyo","Delhi"];
+        for (c of Cities) {
+            document.write("<br/>"+Cities);
+        }
+    </script>
+    <hr>
+    <hr>
+    <script>
+        //Do_while Loops
+        let j=0;
+        do{
+            document.write("<br/>"+j);
+            j++;
+        }
+        while (j < 10);
+    </script>
+</body>
+</html>
